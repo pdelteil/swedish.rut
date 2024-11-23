@@ -1,12 +1,13 @@
 
 from person_validator import validate_swedish_personal_identity_number
-
+import random
 def generate_sequential_swedish_personal_identity_numbers():
     #year
-    for AA in range(20,80):
-        #month
-        # companies starting in 20 
-        for BB in range(01, 13):
+    while True:
+        AA = random.randint(20, 80)
+            #month
+            # companies starting in 20 
+        for BB in range(1, 13):
             #day
             for CC in range(1, 32):
                 for NNNN in range(10000):
